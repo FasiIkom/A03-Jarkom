@@ -85,7 +85,7 @@ func main() {
         fmt.Print("Encoded: " + response.ContentEncoding + CRLF)
     }
     fmt.Println("Body: " + string(response.Data))
-    if response.ContentType != "text/html" {
+    if response.ContentType == "application/json" {
         var parsedData GreetResponse
         err := json.Unmarshal(response.Data, &parsedData)
         if err != nil {
