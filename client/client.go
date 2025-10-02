@@ -91,7 +91,7 @@ func main() {
         if err != nil {
             panic(err)
         }
-        fmt.Print(CRLF + "Parsed: ", parsedData)
+        fmt.Print("Parsed: ", parsedData, CRLF)
     }
 }
 
